@@ -21,7 +21,7 @@ def calcular(*args):
 	elif len(args) == 3:
 		print('volume: ',(args[0]*args[1])*args[2])
 	else:
-		print('Excedeo o numero limite de argumentos que é no maximo 3')
+		print('Excedeu o numero limite de argumentos que é no maximo 3')
 
 calcular(2)
 calcular(2,8)
