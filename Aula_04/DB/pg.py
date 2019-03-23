@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+import psycopg2 as pg
 import psycopg2 as pg
 
 try:
@@ -12,7 +12,7 @@ except Exception as e:
 
 
 try:
-	c.execute('create table viloes(id serial, nome varchar(50), idade int);')
+	c.execute('create table Usuarios(id serial, nome varchar(50), idade int);')
 	con.commit()
 	c.execute('insert into viloes (nome, idade) values ("Charada",20);')
 	c.execute('insert into viloes (nome, idade) values ("Lex Luthor",37);')
